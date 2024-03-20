@@ -1,0 +1,8 @@
+.true{
+  background-color: greenyellow;
+  border: 1px solid green;
+}
+.false{
+  background-color: mistyrose;
+  border: 1px solid red;
+}

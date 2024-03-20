@@ -1,0 +1,13 @@
+<div class="main">
+  <label for="">username</label>
+  <br>
+  <input type="text" [(ngModel)]="input">
+  <br>
+  <br>
+  <button [disabled]="disabled()" class="btn btn-primary" (click)="reset()">Reset</button>
+
+  <h3>username:{{input}}</h3>
+  <br>
+</div>
+
+

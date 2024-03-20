@@ -12,4 +12,7 @@ onClick(){
   this.enabled=false
   window.alert("You clicked on the button")
 }
+getColor(){
+  return (this.enabled)? "green":"red"
+}
 }

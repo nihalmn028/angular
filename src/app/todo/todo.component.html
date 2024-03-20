@@ -1,6 +1,12 @@
 <h1>todo</h1>
 <h1>{{todo1}}</h1>
 
-<button [disabled]="!enabled" class="btn btn-primary" (clic
-
-k)="onClick()">click me</button>
+<button [disabled]="!enabled" class="btn btn-primary" (click)="onClick()">click me</button>
+<input type="text" [(ngModel)]="todo1">
+<p *ngIf="enabled,else buttondisabled">button enabled</p>
+<ng-template #buttondisabled>
+  <p>button disabled</p>
+</ng-template>
+<!-- <p *ngIf="!enabled">button disabled</p> -->
+<p [ngClass]="{true:enabled,false:!enabled}">{{enabled}}</p>
+<p [ngStyle]="{color:getColor()}">{{enabled}}</p>
