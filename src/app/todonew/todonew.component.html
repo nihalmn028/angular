@@ -1,0 +1,13 @@
+
+<div class="main">
+  <input type="text" [(ngModel)]="todo1">
+  <input type="text" [(ngModel)]="todo11">
+  <br>
+  <br>
+  <button class="btn btn-primary" (click)="onAdd()">Add</button>
+</div>
+<div style="margin-top: 40px;margin-left: 60px;">
+<h3 *ngFor="let todo of todos;
+let i=index;">{{todo+i}}</h3>
+<span>{{todo11}}</span>
+</div>

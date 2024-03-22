@@ -1,3 +1,14 @@
 <!-- <h1>hello</h1>
-<app-todo> -->
-  <app-assignment></app-assignment>
+-->
+  <!-- <app-assignment></app-assignment> -->
+  <!-- <app-todo>  -->
+    <!-- <app-todonew></app-todonew> -->
+    <!-- <app-childcomponent></app-childcomponent> -->
+    <h1>custom events and custom properties</h1>
+<h2>app component</h2>
+<button (click)="onClick()">get data from people</button>
+<app-childcomponent [nihal]="data" (dataFromEvent)="recieveData($event)" ></app-childcomponent>
+<p *ngIf="dataFromChild , else showNoData">{{dataFromChild}}</p>
+<ng-template #showNoData>
+<p>no data  recieved from child</p>
+</ng-template>
